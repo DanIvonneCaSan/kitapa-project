@@ -1,6 +1,5 @@
 
-
-/* ++++++++++++ Initialize Firebase ++++++++++ */
+/*Iniciando Firebase de acceso*/
 var config = {
   apiKey: "AIzaSyB1B7rAPM7jix31K4eMhbhwrtj6__nrN4c",
   authDomain: "kitapa-ab4a0.firebaseapp.com",
