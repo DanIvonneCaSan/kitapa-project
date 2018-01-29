@@ -1,1 +1,40 @@
 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Oxygen', sans-serif;
+}
+
+a {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+input[placeholder] {
+  //Texto cuando se escribe
+  color: white;
+}
+
+li>img {
+  padding-bottom: 10%;
+}
+
+nav {
+  padding: 20px 60px 20px 40px;
+}
+
+p {
+  color: white;
+}
+
+span>img {
+  align-content: left;
+}
+
+.logo{
+
+	width: 10%; 
+}
