@@ -34,7 +34,24 @@ span>img {
   align-content: left;
 }
 
-.logo{
+.logo-kitapa{
 
-	width: 10%; 
+	padding: 0;
+}
+
+
+.firstsection {
+  background-image: url("../assets/images/cool.jpg");
+  height: 80vh;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: cover;
+  width: 100%;
+  padding: 0;
+  margin-top: 3%;
+}
+
+.firstsection>.row>.col-lg-5 {
+  background-color: #3B2ED1;
+  margin-top: 20vh;
 }
