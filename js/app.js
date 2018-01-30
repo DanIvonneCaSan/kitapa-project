@@ -11,6 +11,7 @@ var config = {
 firebase.initializeApp(config);
 
 $("#btnGoogle").click(function () {
+  $("#modal-1").modal("hide");
   authGoogle();
 
 });
@@ -22,6 +23,7 @@ $("#btnGoogle").click(function () {
 
 function authentication(provider) {
   firebase.auth().signInWithPopup(provider).then(function(result) {
+    saveData(result.user);
   // This gives you a Google Access Token. You can use it to access the Google API.
   var token = result.credential.accessToken;
   // The signed-in user info.
@@ -32,6 +34,7 @@ function authentication(provider) {
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
+  console.log(errorMessage);
   // The email of the user's account used.
   var email = error.email;
   // The firebase.auth.AuthCredential type that was used.
@@ -39,4 +42,14 @@ function authentication(provider) {
   // ...
 });
 
+} //Fin autenticación fucnión
+
+function saveData(user){
+  var usuario = {
+    uid: user.uid,
+    name: user.displayName,
+    email: user.email,
+    photo: user.photoUrl
+  }
+  firebase.databse().ref("Datos/" + user.uid).set(usuario);
 }
