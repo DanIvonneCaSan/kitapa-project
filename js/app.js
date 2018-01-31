@@ -24,6 +24,7 @@ $("#btnGoogle").click(function () {
 function authentication(provider) {
   firebase.auth().signInWithPopup(provider).then(function(result) {
     saveData(result.user);
+    console.log(result.user);
   // This gives you a Google Access Token. You can use it to access the Google API.
   var token = result.credential.accessToken;
   // The signed-in user info.
@@ -49,7 +50,7 @@ function saveData(user){
     uid: user.uid,
     name: user.displayName,
     email: user.email,
-    photo: user.photoUrl
+    photo: user.photoURL
   }
   firebase.databse().ref("Datos/" + user.uid).set(usuario);
 }
