@@ -3,9 +3,12 @@
 ![Kitapa portada](assets/images/cool.jpg)
 
 **Sánchez Asociados**
+
 Daniela Castillo Sánchez, Ana Laura Sánchez Tamayo
-*Tonalá #30
-Cuahutemoc, CDMX*
+
+*Tonalá #30*
+
+*Cuahutemoc, CDMX*
 
 
 
@@ -13,16 +16,16 @@ Cuahutemoc, CDMX*
 
 Realizar la proyección, desarrollo e implementación de una red social que permita la conexión y acercamiento de Pymes y pequeños productores en contacto con inversionistas y exportadores posicionados, de manera que ambas partes puedan encontrar beneficio de su alianza, propiciando el comercio justo y la activación económica. 
 
-##Visión
+## Visión
 
 Que el producto final se vuelva una red social popular y novedosa que se posicione como la favorita dentro de los usuarios y que permita consolidar su éxito dentro del mercado regional y global. 
 
-##Objetivos Generales
+## Objetivos Generales
 
 * Realizar la proposición, maquetación y programación de una red social novedosa. 
 * Posicionarla como la favorita de los usuarios, atendiendo a un target específico.
 
-##Objetivos Específicos 
+## Objetivos Específicos 
 
 En el mundo actual muchos inversionistas optan por la creación de productos digitales como nueva puesta por generar una ganancia, por lo que una red social se considera como uno de los productos más completos y con mayor facilidad para realizar la captación de activos a traves del uso de las TICs. 
 
@@ -40,10 +43,14 @@ personas/marcas dentro de la red social
 
 ## Milestones
 
-	1.- Producto novedoso
-		Como resultado de la falta de soluciones a las necesidades que presenta el target de usuarios seleccionados. 
-	2.- Consolidarse como la red predilecta de los usuarios
-             
+1.- **Producto novedoso**
+	Como resultado de la falta de soluciones a las necesidades que presenta el target de usuarios seleccionados. 
+
+2.- **Consolidarse como la red predilecta de los usuarios**
+	A través de la solución de éstas necesidades y la satisfacción de los usuarios a sus inquietudes monitoreándolas de forma constante, de manera tal que también se cumplan los objetivos del negocio. 
+
+
+         
 
 ## Justificación
 
