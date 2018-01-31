@@ -1,53 +1,468 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name ="viewport" content="width=device-width, initial-scale= 1.0">
-		<link rel="icon" type="image/png" href="assets/images/cuadro_azul.png">
-		<title>Kitapa</title> <!-- Para comentar -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="../css/main.css">
-	</head>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+	<link rel="icon" type="image/png" href="../assets/images/cuadro_azul.png">
+	<title>Kitapa</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
 
 
-	<body>
+<body>
+	<nav class="animate" id="userprofile">
+		<ul>
+			<li id="userprof">
+				<img src="../assets/images/user.png" class="img-responsive center-block" alt="User" >
+			</li>
+			<li>
+				<a href="#" class="btn btn-block">Name</a>
+			</li>
 
-		 <nav class="navbar navbar-default navbar-fixed-top header">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed navbarcfg" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle nav</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <img src="assets/images/logoForma.png" alt="logo-img" class="navbar-brand">
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">¿Quiénes somos?</a></li>
-              <li><a href="#">Regístrate</a></li>
-              <li><a href="#" data-toggle="modal" data-target="#modal-1">Inicia Sesión</a></li>
-            </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-        </div>
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
+		</ul>
+		<div class="divider"></div>
+		<ul>
+			<li>
+				<a href="#" class="btn btn-block">Búsqueda</a>
+			</li>
+			<li>
+				<a href="#" class="btn btn-block">Favoritos</a>
+			</li>
+			<li>
+				<a href="#" class="btn btn-block">Contactos</a>
 
+			</li>
+			<li>
+				<a href="#" class="btn btn-block">Mensajes</a>
 
-		<button class="btn btn-primary" type="button" id="btnGoogle">Acceso con Google</button>
+			</li>
+			<li>
+				<a href="#" class="btn btn-block">Eventos</a>
 
+			</li>
+			<li>
+				<a href="#" class="btn btn-block">Proyectos</a>
 
-		<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
-	  	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="../js/app.js"></script>
-	</body>
+			</li>
+			<li>
+				<a href="#" class="btn btn-block">Market</a>
+
+			</li>
+			<li>
+				<a href="#" class="btn btn-block">Ayuda</a>
+
+			</li>
+		</ul>
+	</nav>
+
+	<nav class="navbar navbar-default navcomplete" role="navigation" style="margin-bottom: 0;">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<div class="nav-controller">
+					<span class="[ glyphicon glyphicon-user ] controller-open"></span>
+					<span class="[ glyphicon glyphicon-remove ] controller-close"></span>
+				</div>
+				<div class="brand">
+					<img src="../assets/images/Negro.png" alt="Logo" class="logo_N">
+				</div>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-bootsnipp-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+			</div>
+			<!-- Fin navbar header-->
+
+			<!--  toggling -->
+			<div class="collapse navbar-collapse">
+				<div class="col-sm-3 col-md-3" id="search">
+					<form class="navbar-form" role="search" action="/search" method="GET" id="search-form">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Búsqueda" name="q" style="padding:6px 6px;">
+							<div class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<ul class="nav navbar-nav" id="iconsmenu">
+					<li class=""><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+					<li class=""><a href="#"><span class="glyphicon glyphicon-book"></span></a></li>
+					<li class=""><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+					<li class=""><a href="#"><span class="glyphicon glyphicon-comment"></span></a></li>
+					<li class=""><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Espacio para escribir POSTs-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-7 col-lg-6">
+				<div class="well">
+					<div class="media">
+						<div class="form-group">
+							<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+							<div class="col-md-8">
+								<textarea class="form-control" id="message" name="message" placeholder="Ingresa el anuncio o inforción que desees compartir." rows="7"></textarea>
+							</div>
+						</div>
+						<div class="">
+							<label class="control-label">Elije un archivo</label>
+							<input name="input-b5[]" type="file" multiple>
+						</div>
+						<button type="submit" name="button" class="btn btn-default" id="btnsend">Enviar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-7 col-lg-6">
+				<!-- <div class="container"> -->
+				<div class="well">
+					<div class="media">
+						<a class="pull-left" href="#">
+	    		<img class="media-object" src="http://dummyimage.com/150x150">
+	  		</a>
+						<div class="media-body">
+							<h4 class="media-heading">Venta de zanahorias</h4>
+							<p class="text-right">By Juan Ramos</p>
+							<p>Cantidad: 50 kilos</p>
+							<p>Ubicación: localidad, Oaxaca</p>
+							<ul class="list-inline list-unstyled">
+								<li><span><i class="glyphicon glyphicon-calendar"></i> 1 día, 8 horas </span></li>
+								<li>|</li>
+								<span><i class="glyphicon glyphicon-comment"></i> 1 comentario</span>
+								<li>|</li>
+								<li>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</li>
+								<li>|</li>
+								<li>
+									<!-- -->
+									<span><i class="fa fa-facebook-square"></i></span>
+									<span><i class="fa fa-twitter-square"></i></span>
+									<span><i class="fa fa-google-plus-square"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="well">
+					<div class="media">
+						<a class="pull-left" href="#">
+	    		<img class="media-object" src="http://dummyimage.com/150x150">
+	  		</a>
+						<div class="media-body">
+							<h4 class="media-heading">Venta de bolsos artesanales</h4>
+							<p class="text-right">Por Luisa Gómez</p>
+							<p>Cantidad: 1- 20 piezas</p>
+							<p>Ubicación: San Cristobal</p>
+							<ul class="list-inline list-unstyled">
+								<li><span><i class="glyphicon glyphicon-calendar"></i> 1 día, 12 horas </span></li>
+								<li>|</li>
+								<span><i class="glyphicon glyphicon-comment"></i> 1 comentario/span>
+	            <li>|</li>
+	            <li>
+	               <span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+								</li>
+								<li>|</li>
+								<li>
+									<span><i class="fa fa-facebook-square"></i></span>
+									<span><i class="fa fa-twitter-square"></i></span>
+									<span><i class="fa fa-google-plus-square"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- </div> -->
+
+				<!-- FIn post -->
+			</div>
+			<div class="well col-xs-8 col-sm-8 col-md-4 col-lg-4 col-xs-offset-1 col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+				<!-- Caja del usuario -->
+				<div class="row user-row">
+					<div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
+						<img class="img-circle" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50" alt="User Pic">
+					</div>
+					<div class="col-xs-8 col-sm-9 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<strong>Adan Sosa</strong><br>
+						<span class="text-muted">Productor/ comercializador</span>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 dropdown-user" data-for=".adan">
+						<i class="glyphicon glyphicon-chevron-down text-muted"></i>
+					</div>
+				</div>
+				<div class="row user-infos adan">
+					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Información</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12 col-lg-12 hidden-xs hidden-sm">
+										<img class="img-circle" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" alt="User Pic">
+									</div>
+									<div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+										<img class="img-circle" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50" alt="User Pic">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-10 col-sm-10 hidden-md hidden-lg">
+										<strong>Adan Sosa</strong><br>
+										<dl>
+											<dt>Perfil</dt>
+											<dd>Productor</dd>
+											<dt>Registrado desde:</dt>
+											<dd>11/12/2017</dd>
+											<dt>Ubicación</dt>
+											<dd>Puebla</dd>
+											<dt>Ventas concretadas</dt>
+											<dd>10</dd>
+										</dl>
+									</div>
+									<div class=" col-md-6 col-lg-6 hidden-xs hidden-sm">
+										<strong>Adan Sosa</strong><br>
+										<table class="table table-user-information">
+											<tbody>
+												<tr>
+													<td>Perfil</td>
+													<td>Productor</td>
+
+												</tr>
+												<tr>
+													<td>Registrado desde:</td>
+													<td>11/12/2017</td>
+												</tr>
+												<tr>
+													<td>Ubicación</td>
+													<td>Puebla</td>
+												</tr>
+												<tr>
+													<td>Ventas Concretadas</td>
+													<td>10</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="panel-footer">
+								<button class="btn btn-sm btn-primary" type="button" data-toggle="tooltip" data-original-title="Send message to user"><i class="glyphicon glyphicon-envelope"></i></button>
+								<span class="pull-right">
+	 															 <button class="btn btn-sm btn-warning" type="button"
+	 																			 data-toggle="tooltip"
+	 																			 data-original-title="Edit this user"><i class="glyphicon glyphicon-edit"></i></button>
+	 															 <button class="btn btn-sm btn-danger" type="button"
+	 																			 data-toggle="tooltip"
+	 																			 data-original-title="Remove this user"><i class="glyphicon glyphicon-remove"></i></button>
+	 													 </span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fin usuario uno -->
+
+				<!-- Caja del usuario -->
+				<div class="row user-row">
+					<div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
+						<img class="img-circle" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50" alt="User Pic">
+					</div>
+					<div class="col-xs-8 col-sm-9 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<strong>Mi huerta</strong><br>
+						<span class="text-muted">Productor/ comercializador</span>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 dropdown-user" data-for=".huerta">
+						<i class="glyphicon glyphicon-chevron-down text-muted"></i>
+					</div>
+				</div>
+				<div class="row user-infos huerta">
+					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Información</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12 col-lg-12 hidden-xs hidden-sm">
+										<img class="img-circle" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" alt="User Pic">
+									</div>
+									<div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+										<img class="img-circle" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50" alt="User Pic">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-10 col-sm-10 hidden-md hidden-lg">
+										<strong>Mi huerto</strong><br>
+										<dl>
+											<dt>Perfil</dt>
+											<dd>Productor</dd>
+
+											<dt>Registrado desde:</dt>
+											<dd>01/01/2018</dd>
+											<dt>Ubicación</dt>
+											<dd>CDMX</dd>
+											<dt>Ventas concretadas</dt>
+											<dd>20</dd>
+										</dl>
+									</div>
+									<div class=" col-md-6 col-lg-6 hidden-xs hidden-sm">
+										<strong>Adan Sosa</strong><br>
+										<table class="table table-user-information">
+											<tbody>
+												<tr>
+													<td>Perfil</td>
+													<td>Productor</td>
+
+												</tr>
+												<tr>
+													<td>Registrado desde:</td>
+													<td>01/01/2018</td>
+												</tr>
+												<tr>
+													<td>Ubicación</td>
+													<td>CDMX</td>
+												</tr>
+												<tr>
+													<td>Ventas Concretadas</td>
+													<td>20</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="panel-footer">
+								<button class="btn btn-sm btn-primary" type="button" data-toggle="tooltip" data-original-title="Send message to user"><i class="glyphicon glyphicon-envelope"></i></button>
+								<span class="pull-right">
+	 				                            <button class="btn btn-sm btn-warning" type="button"
+	 				                                    data-toggle="tooltip"
+	 				                                    data-original-title="Edit this user"><i class="glyphicon glyphicon-edit"></i></button>
+	 				                            <button class="btn btn-sm btn-danger" type="button"
+	 				                                    data-toggle="tooltip"
+	 				                                    data-original-title="Remove this user"><i class="glyphicon glyphicon-remove"></i></button>
+	 				                        </span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fin usuario dos -->
+
+				<!-- Caja del usuario -->
+				<div class="row user-row">
+					<div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
+						<img class="img-circle" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50" alt="User Pic">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<strong>Artesanos</strong><br>
+						<span class="text-muted">Productor/ comercializador</span>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 dropdown-user" data-for=".artesanosasc">
+						<i class="glyphicon glyphicon-chevron-down text-muted"></i>
+					</div>
+				</div>
+				<div class="row user-infos artesanosasc">
+					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Información</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12 col-lg-12 hidden-xs hidden-sm">
+										<img class="img-circle" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" alt="User Pic">
+									</div>
+									<div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+										<img class="img-circle" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50" alt="User Pic">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+										<strong>Artesanos Asociados</strong><br>
+										<dl>
+											<dt>Perfil</dt>
+
+											<dd>Comercializador</dd>
+											<dt>Registrado desde:</dt>
+											<dd>18/01/2018</dd>
+											<dt>Ubicación</dt>
+											<dd>Oaxaca</dd>
+											<dt>Ventas concretadas</dt>
+											<dd>23</dd>
+										</dl>
+									</div>
+									<div class=" col-md-6 col-lg-6 hidden-xs hidden-sm">
+										<strong>Artesanos Asociados</strong><br>
+										<table class="table table-user-information">
+											<tbody>
+												<tr>
+													<td>Perfil</td>
+
+													<td>Comercializador</td>
+												</tr>
+												<tr>
+													<td>Registrado desde:</td>
+													<td>18/01/2018</td>
+												</tr>
+												<tr>
+													<td>Ubicación</td>
+													<td>Oaxaca</td>
+												</tr>
+												<tr>
+													<td>Ventas Concretadas</td>
+													<td>23</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="panel-footer">
+								<button class="btn btn-sm btn-primary" type="button" data-toggle="tooltip" data-original-title="Send message to user"><i class="glyphicon glyphicon-envelope"></i></button>
+								<span class="pull-right">
+	 												                            <button class="btn btn-sm btn-warning" type="button"
+	 												                                    data-toggle="tooltip"
+	 												                                    data-original-title="Edit this user"><i class="glyphicon glyphicon-edit"></i></button>
+	 												                            <button class="btn btn-sm btn-danger" type="button"
+	 												                                    data-toggle="tooltip"
+	 												                                    data-original-title="Remove this user"><i class="glyphicon glyphicon-remove"></i></button>
+	 												                        </span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Fin usuario tres -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/app.js"></script>
+</body>
+
 </html>
