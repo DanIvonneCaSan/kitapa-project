@@ -11,16 +11,16 @@ Cuahutemoc, CDMX*
 
 ## Misión
 
-	Realizar la proyección, desarrollo e implementación de una red social que permita la conexión y acercamiento de Pymes y pequeños productores en contacto con inversionistas y exportadores posicionados, de manera que ambas partes puedan encontrar beneficio de su alianza, propiciando el comercio justo y la activación económica. 
+Realizar la proyección, desarrollo e implementación de una red social que permita la conexión y acercamiento de Pymes y pequeños productores en contacto con inversionistas y exportadores posicionados, de manera que ambas partes puedan encontrar beneficio de su alianza, propiciando el comercio justo y la activación económica. 
 
 ##Visión
 
-	Que el producto final se vuelva una red social popular y novedosa que se posicione como la favorita dentro de los usuarios y que permita consolidar su éxito dentro del mercado regional y global. 
+Que el producto final se vuelva una red social popular y novedosa que se posicione como la favorita dentro de los usuarios y que permita consolidar su éxito dentro del mercado regional y global. 
 
 ##Objetivos Generales
 
-	* Realizar la proposición, maquetación y programación de una red social novedosa. 
-	* Posicionarla como la favorita de los usuarios, atendiendo a un target específico.
+* Realizar la proposición, maquetación y programación de una red social novedosa. 
+* Posicionarla como la favorita de los usuarios, atendiendo a un target específico.
 
 ##Objetivos Específicos 
 
