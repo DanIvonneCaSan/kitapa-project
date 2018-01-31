@@ -99,14 +99,14 @@ Se diseñó una maquetación de interfaz amigable con el usuario utilizando algu
 Se eligió una paleta de colores con azul, debido a que se pretende transmitir una sensación de confianza y fiabilidad en los usuarios, imágenes que realicen conexión con lo que nuestros usuarios realizan. 
 
 
-[Vista inicio](documents/vista-de-inicio.png)
+![Vista inicio](documents/vista-de-inicio.png)
 
 Iniciamos con la vista principal, optamos por la simplificación: una imagen agradable, y 2 secciones a la vista, la barra de navegación fija con el logo del lado izquierdo y del lado derecho el botón de inicio de sesión, que abre un modal para ingresar usuario, contraseña, boton de ingreso y opción de olvido de contraseña; y otro que lleva a la sección donde se describe mejor el motivo del producto; en medio y del lado izquierdo se invita a tomar acción realizando el registro de un nuevo usuario, este botón abre un modal para registro de dato adicionales de la cuenta, como: tipo de usuario, nombre de usuario, RFC, etc. Si el usuario no considera que la información de esta vista es suficiente, no toma acción al registro o no da click en el botón de más información, haciendo scroll también puede ver la descripción del producto.
 
 En esta vista se describe un poco más  sobre lo que es Kitapa. La vista cuenta con un cuadro te texto fijo enmedio a la izquierda debajo del logo y un botón que invite nuevamente al usuario a registrarse, este botón abre el modal de registro anteriormente descrito. . Del lado derecho un carrousel de imágenes con texto breve pero descriptivo que motive al usuario a realizar el registro. 
 
 
-[Acerca de](documents/acerca-de.png)
+![Acerca de](documents/acerca-de.png)
 
 Una vez que el usuario realiza su registro o  inicia sesión se le envía a la vista de noticias y tablero principal. 
 
@@ -121,7 +121,7 @@ Una vez que el usuario realiza su registro o  inicia sesión se le envía a la v
 	* **Chat:** De momento esta sección es para ver contactos en línea y poder enviar mensajes, se pretende que a futuro, pueda ser espacio para poder minimizar una videollamada mientras se realizan otras tareas en la red social. 
 
 
-[Tablero](documents/vista-newsfeed.png)
+![Tablero](documents/vista-newsfeed.png)
 
 
 
@@ -131,7 +131,19 @@ Una vez que el usuario realiza su registro o  inicia sesión se le envía a la v
 
 ## Planeación
 
-[Diagrama de Gantt](documents/planing.png)
+![Diagrama de Gantt](documents/planing.png)
+
+
+## Producto Final
+
+![Vista de inicio](documents/pl.png)
+
+![Acerca de...](documents/pl.png)
+
+![Tablero](documents/pl.png)
+
+
+
 
 
 
