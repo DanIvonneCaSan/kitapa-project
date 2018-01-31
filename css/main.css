@@ -42,21 +42,226 @@ span>img {
 
 .firstsection {
   background-image: url("../assets/images/cool.jpg");
-  height: 80vh;
-  background-position-y: bottom;
+  height: 90vh;
+  background-position-y: top;
   background-position-x: center;
   background-size: cover;
   width: 100%;
   padding: 0;
-  margin-top: 3%;
+  margin-top: 6%;
+  margin-right: 0;
+  color: #FFFFFF;
 }
 
-.firstsection>.row>.col-lg-5 {
-  background-color: #3B2ED1;
+.firstsection>.row>.col-lg-4 {
+  background-color: rgba(37,33,95,0.7);
   margin-top: 20vh;
+  padding: 2%;
 }
+
+.firstsection>.row>.col-xs-4 {
+  background-color: rgba(37,33,95,0.5);
+  margin-top: 20vh;
+  padding: 2%;
+}
+
 
 .logo_B {
   width:100%;
-  height: 30vh;
 }
+
+.header{
+	background-color: #FFFFFF;
+}
+
+.div-logo{
+	width: 30%;
+	padding: 0;
+	margin: 0 0 2% 2%;
+}
+
+.copyright{
+	background-color: #5f54f2;
+}
+
+.description{
+	color: #FFFFFF;
+	background-color: rgba(37,33,95,0.5);
+    margin-top: 20vh;
+    padding: 2%;
+}
+
+.carousel {
+	width: 100%;
+}
+
+.slide {
+	width: 100%;
+}
+
+
+
+.carousel-caption{
+	width: 100vh;
+}
+
+.description_about{
+	color: #FFFFFF;
+	background-color: #5f54f2;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 5%;
+}
+
+.div-logo-about{
+	width: 30%;
+	padding: 0;
+	margin: 10% 0 0 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+form > p {
+   color: black;
+ }
+
+ form > p > a {
+   color: #FF1F1F;
+ }
+
+ .input-group .form-control:lastchild{
+   border-radius: 5px;
+ }
+
+ .modal1 {
+   background-color: #FFC107;
+   color: white;
+   margin: 5%;
+   margin-left: 35%;
+ }
+
+ .modal-content {
+   background-color: #DDDDDD;
+ }
+
+ .modal-header > img {
+   width:40%;
+ }
+
+ .well{
+   width: 60%;
+   margin: 10%;
+   margin-left: 20%;
+ }
+
+ .well > form > .form-group > input{
+   background-color: #cbccc9;
+   border-radius: 5px;
+ }
+
+/* Modal Registro */
+.btncnt{
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+  padding: 2%;
+  width: 100%;
+}
+
+.btnmenu{
+  background-color: #DDDDDD;
+  color: black;
+  width: 100%;
+  padding-right: 12%;
+}
+
+.caret{
+  margin:4%;
+}
+
+.iname, .ilastnm {
+  margin: 2% 2% 2% 0;
+  border-radius: 5px;
+}
+
+.modal2{
+  background-color: #5BC0DE;
+  color: white;
+  width: 100%;
+}
+
+.modalreg{
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.otherinpt > input{
+  margin: 2% 0;
+}
+
+.sec1reg{
+  width: 100%;
+  margin: 0;
+}
+
+.sec2reg , .sec3reg{
+  display: inline-block;
+  margin: 0;
+  margin-left: 0.2%;
+  width: 49%;
+}
+
+.textm2{
+  color: grey;
+  font-size: 12px;
+  margin-top: 2%;
+}
+
+.wreg{
+   background-color: #A9A9A9;
+ }
+
+/* Modal conductor */
+#carnmb{
+  background-color: grey;
+  font-size: 16px;
+  font-weight: 700;
+}
+.modal3{
+  color: black;
+}
+
+.modalbox3 {
+  padding: 6%;
+  font-size: 16px;
+  background-color: #a8a8a8;
+}
+
+.modal3 > p {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+ .modal3 > select {
+   background: grey;
+   color: white;
+ }
+
+ .modal3 > .note {
+   color: lightgrey;
+   font-size: 10px;
+ }
+
+ .note > a{
+   color: blue;
+ }
