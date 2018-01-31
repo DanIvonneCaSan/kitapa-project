@@ -32,7 +32,7 @@ function authentication(provider) {
   var user = result.user;
   window.location.href="../views/profile.html";
   console.log(user);
-  #("#userprof").append("<img scr='"+result.user.photoURL+"'/>")
+  $("#userprof").append("<img scr='"+result.user.photoURL+"'/>")
 })
 .catch(function(error) {
   // Handle Errors here.
