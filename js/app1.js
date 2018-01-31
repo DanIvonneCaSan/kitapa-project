@@ -1,4 +1,4 @@
-var database = firebase.database();
+// var database = firebase.database();
 
 /*Iniciando Firebase de acceso*/
 var config = {
@@ -30,7 +30,6 @@ function authentication(provider) {
   var token = result.credential.accessToken;
   // The signed-in user info.
   var user = result.user;
-  window.location.href="../views/profile.html";
   console.log(user);
   $("#userprof").append("<img scr='"+result.user.photoURL+"'/>")
 })
@@ -56,7 +55,7 @@ function saveData(user){
       foto:user.photoURL
     }
     // agrega datos
-    firebase.database().ref("datosUser" ).push(usuario)
+    // firebase.database().ref("datosUser" ).push(usuario)
     // agrega datos usuarios existentes
     firebase.database().ref("datosUser/" + user.uid).set(usuario)
 }
@@ -69,10 +68,10 @@ function saveData(user){
 // })
 // Extraer datos de la BD
 
-firebase.database().ref("datosUser").on("child_added",function(s){
-  var user = s.val();
-  $("#userprof").append("<img width='150px' scr='"+ user.foto+"'/>")
-})
+// firebase.database().ref("datosUser").on("child_added",function(s){
+//   var user = s.val();
+//   $("#userprof").append("<img width='150px' scr='"+ user.foto+"'/>")
+// })
 // función nav view
 
 $(function() {
@@ -119,10 +118,10 @@ $(document).ready(function() {
 
     $('[data-toggle="tooltip"]').tooltip();
 
-    // $('button').click(function(e) {
-    //     e.preventDefault();
+    $('button').click(function(e) {
+         e.preventDefault();
     //     $("#iconsmenu").show();
-    // });
+     });
 });
 
 $(document).on('ready', function() {
